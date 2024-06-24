@@ -3268,6 +3268,45 @@ form option{
 form optgroup{
     color: #FF0000;
 }
+@media (max-width: 660px) {
+    .banner {
+        padding-bottom: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form select, form input {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding-bottom: 30px;
+    }
+.card-container {
+        padding: 0 10px;
+    }
+
+    form select, form input {
+        font-size: 14px;
+        margin: 8px 0;
+        padding: 8px;
+    }
+
+    form input[type=submit] {
+        padding: 10px 0;
+    }
+}
 
 
 /* form input[type = submit]:hover{
